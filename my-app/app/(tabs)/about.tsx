@@ -1,0 +1,35 @@
+import { Text, View, StyleSheet } from "react-native";
+import { Stack } from "expo-router";
+
+export default function About() {
+    return (
+      <>
+        <Stack.Screen options={{ title: "About" }} />
+
+        <View
+          style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Text style={styles.container}>About</Text>
+        </View>
+      </>
+    );
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#25292e",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100%",
+    width: "100%",
+    color: "white",
+    textAlign: "center",
+    fontSize: 40,
+    fontWeight: 800,
+    padding: 20,
+  },
+});

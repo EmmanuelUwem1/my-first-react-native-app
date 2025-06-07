@@ -4,7 +4,8 @@ import { Link, Stack } from "expo-router";
 export default function Index() {
   return (
     <>
-      <Stack.Screen options={{title:"Home"}}></Stack.Screen>
+      <Stack.Screen options={{ title: "Home" }} />
+
       <View style={styles.container}>
         <Text style={styles.text}>Home screen</Text>
         <Link href="/about" style={styles.button}>
@@ -23,11 +24,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   text: {
-    color: "#fff",
+    color: "white",
   },
   button: {
     fontSize: 20,
     textDecorationLine: "underline",
-    color: "#fff",
+    color: "white",
   },
 });
