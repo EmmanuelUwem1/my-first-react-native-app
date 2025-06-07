@@ -1,18 +1,16 @@
-import { Text, View, StyleSheet } from "react-native";
-import { Link, Stack } from "expo-router";
+import { Text, View, StyleSheet, SafeAreaView } from "react-native";
+import { Link } from "expo-router";
 
 export default function Index() {
   return (
-    <>
-      <Stack.Screen options={{ title: "Home" }} />
-
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View>
         <Text style={styles.text}>Home screen</Text>
         <Link href="/about" style={styles.button}>
           Go to About screen
         </Link>
       </View>
-    </>
+    </SafeAreaView>
   );
 }
 

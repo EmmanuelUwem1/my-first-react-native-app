@@ -1,10 +1,8 @@
 import { Text, View, StyleSheet } from "react-native";
-import { Stack } from "expo-router";
 
 export default function About() {
     return (
       <>
-        <Stack.Screen options={{ title: "About" }} />
 
         <View
           style={{
