@@ -5,10 +5,8 @@ export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={styles.text}>Home screen</Text>
-        <Link href="/about" style={styles.button}>
-          Go to About screen
-        </Link>
+        
+       
       </View>
     </SafeAreaView>
   );

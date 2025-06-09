@@ -3,23 +3,21 @@ import { Text, View, StyleSheet } from "react-native";
 export default function About() {
     return (
       <>
-
         <View
           style={{
             flex: 1,
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor: "#000000",
           }}
-        >
-          <Text style={styles.container}>About</Text>
-        </View>
+        ></View>
       </>
     );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#25292e",
+    backgroundColor: "#000000",
     alignItems: "center",
     justifyContent: "center",
     height: "100%",

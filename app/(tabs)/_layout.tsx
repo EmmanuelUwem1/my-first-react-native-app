@@ -10,12 +10,12 @@ export default function TabLayout() {
         },
         headerShadowVisible: false,
         headerTintColor: "#fff",
-        headerTitleStyle:  {
-          fontWeight: 'bold',
+        headerTitleStyle: {
+          fontWeight: "bold",
         },
         tabBarStyle: {
           backgroundColor: "#25292e",
-          shadowColor:"transparent",
+          shadowColor: "transparent",
         },
       }}
     >
