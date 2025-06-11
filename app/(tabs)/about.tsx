@@ -1,17 +1,12 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, SafeAreaView, View, StyleSheet } from "react-native";
 
 export default function About() {
     return (
-      <>
-        <View
-          style={{
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "#000000",
-          }}
-        ></View>
-      </>
+    
+        <SafeAreaView
+          style={styles.container}
+        ></SafeAreaView>
+     
     );
 }
 const styles = StyleSheet.create({
