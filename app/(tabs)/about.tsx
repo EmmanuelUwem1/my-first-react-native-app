@@ -2,11 +2,12 @@ import { Text, SafeAreaView, View, StyleSheet } from "react-native";
 
 export default function About() {
     return (
-    
-        <SafeAreaView
-          style={styles.container}
-        ></SafeAreaView>
-     
+      <>
+      
+        <SafeAreaView style={styles.container}>
+
+        </SafeAreaView>
+      </>
     );
 }
 const styles = StyleSheet.create({

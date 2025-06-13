@@ -16,14 +16,14 @@ export default function TabLayout() {
         tabBarStyle: {
           backgroundColor: "#25292e",
           shadowColor: "black",
-          borderTopWidth: 0,
+          borderTopWidth:0,
         },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "My App",
+          title: "Home",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
