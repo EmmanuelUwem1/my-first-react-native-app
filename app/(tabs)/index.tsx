@@ -3,7 +3,10 @@ import { Link } from "expo-router";
 
 export default function Index() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={flex: 1,
+    backgroundColor: "#25292e",
+    alignItems: "center",
+    justifyContent: "center"}>
       <View>
         
        
