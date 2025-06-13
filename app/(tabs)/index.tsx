@@ -1,12 +1,12 @@
-import { Text, View, StyleSheet, SafeAreaView } from "react-native";
+import { Text, View, StyleSheet, SafeAreaView, TouchableHighlight } from "react-native";
 import { Link } from "expo-router";
 
 export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.boxContainer}>
-        {[...Array(8)].map((_, index) => (
-          <View key={index} style={styles.box}></View>
+        {[...Array(18)].map((_, index) => (
+          <TouchableHighlight key={index} style={styles.box}></TouchableHighlight>
         ))}
       </View>
     </SafeAreaView>
@@ -33,12 +33,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap", // Ensures boxes stay within the screen
     gap: 16, // Works in React Native 0.71+
-    justifyContent: "flex-start",
+    justifyContent: "center",
+    alignItems:"center"
   },
   box: {
     backgroundColor: "black",
-    width: 200, // Explicit width for square shape
-    height: 200, // Explicit height for square shape
+    width: 160, // Explicit width for square shape
+    height: 160, // Explicit height for square shape
     borderRadius: 10,
   },
 });
