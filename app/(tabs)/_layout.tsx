@@ -7,8 +7,10 @@ export default function TabLayout() {
         tabBarActiveTintColor: "#ffffff",
         headerStyle: {
           backgroundColor: "#25292e",
+          boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)", // Soft shadow effect
         },
         headerShadowVisible: true,
+        headerTransparent:true,
         headerTintColor: "#fff",
         headerTitleStyle: {
           fontWeight: "bold",
