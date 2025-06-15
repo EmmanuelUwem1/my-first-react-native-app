@@ -1,13 +1,16 @@
-import { Text, View, StyleSheet, SafeAreaView, ScrollViewComponent , ScrollView, TouchableHighlight } from "react-native";
+import { Text, View, StyleSheet, SafeAreaView , ScrollView, TouchableHighlight } from "react-native";
 import { Link } from "expo-router";
 
 export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
+      <View><Text>Welcome to my app</Text></View>
       <ScrollView>
         <View style={styles.boxContainer}>
           {[...Array(18)].map((_, index) => (
-            <View key={index} style={styles.box}></View>
+            <Link href={"/(tabs)/about"} key={index}>
+              <View style={styles.box}></View>
+            </Link>
           ))}
         </View>
       </ScrollView>
