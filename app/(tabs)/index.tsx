@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
   boxContainer: {
     flex: 1,
     flexDirection: "row",
-    flexWrap: "wrap", // Ensures boxes stay within the screen
-    gap: 16, // Works in React Native 0.71+
+    flexWrap: "wrap", 
+    gap: 16, 
     justifyContent: "center",
     alignItems: "center",
     paddingTop: 120,
@@ -44,8 +44,8 @@ const styles = StyleSheet.create({
   },
   box: {
     backgroundColor: "#5f5f61",
-    width: 160, // Explicit width for square shape
-    height: 160, // Explicit height for square shape
+    width: 160, 
+    height: 160, 
     borderRadius: 10,
   },
 });
