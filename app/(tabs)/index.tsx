@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
-    height:"100%"
+    height: "100%",
   },
   text: {
     color: "white",
@@ -33,17 +33,17 @@ const styles = StyleSheet.create({
     color: "white",
   },
   boxContainer: {
-    flex:1,
+    flex: 1,
     flexDirection: "row",
     flexWrap: "wrap", // Ensures boxes stay within the screen
     gap: 16, // Works in React Native 0.71+
     justifyContent: "center",
     alignItems: "center",
     paddingTop: 120,
-    paddingBottom:60
+    paddingBottom: 60,
   },
   box: {
-    backgroundColor: "black",
+    backgroundColor: "#5f5f61",
     width: 160, // Explicit width for square shape
     height: 160, // Explicit height for square shape
     borderRadius: 10,
