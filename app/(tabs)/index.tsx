@@ -1,10 +1,15 @@
-import { Text, View, StyleSheet, SafeAreaView , ScrollView, TouchableHighlight } from "react-native";
+import { Text, View, StyleSheet, SafeAreaView , ScrollView } from "react-native";
 import { Link } from "expo-router";
 
 export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
-      <View><Text>Welcome to my app</Text></View>
+      <View
+        style={{ width: "100%", alignItems: "center", paddingVertical: 20 }}
+      >
+        <Text style={styles.heading}>Welcome to my app</Text>
+      </View>
+
       <ScrollView>
         <View style={styles.boxContainer}>
           {[...Array(18)].map((_, index) => (
@@ -26,6 +31,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     position: "relative",
     height: "100%",
+  },
+  heading: {
+    flex: 1,
+    color: "white",
+    fontSize: 30,
+    fontWeight:"bold",
   },
   text: {
     color: "white",
